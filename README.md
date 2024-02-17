@@ -1,4 +1,10 @@
-# programacion2
+# programación 2
 
-Reposotorio del curso de programacion 2 del estudiante
-Jorge Ivan Acosta Aristizabal.
+Repositorio para el curso de programacion 2 del
+ estudiante Jorge Iván Acosta Aristizábal.
+
+ ## 0.info
+ Carpeta para proyectos
+
+ ## 1.model
+ Carpeta para diagramas
