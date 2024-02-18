@@ -83,6 +83,6 @@ public interface ProductoAcciones {
     }
 
     public void recibirPago(int total) {
-    	System.out.println("Se pago desde:" + pago.banco + "la cantidad: " + pago.pagarTarifa(int total));
+    	System.out.println("Se pago desde:" + pago.banco + "la cantidad: " + pago.pagarTarifa(total));
     }
 }
