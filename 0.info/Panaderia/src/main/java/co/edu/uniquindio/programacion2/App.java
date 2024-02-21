@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
         // Creamos algunos productos
         ProductoPan panIntegral = new ProductoPan("Pan Integral", 2000);
         panIntegral.setIntegral();
@@ -17,7 +16,6 @@ public class App
         productos.add(panIntegral);
         productos.add(panBlanco);
         productos.add(bebidaRefresco);
- 
         Venta ventaHoy = new Venta(productos);
         // Mostramos el total de ventas
         System.out.println("El total de ventas es: $" + ventaHoy.calcularTotalVentas());
