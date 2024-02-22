@@ -24,5 +24,3 @@ public class Cliente {
   public ArrayList<Reserva> getReserva() {
     return this.reservasActivas;
   }
-  
-}

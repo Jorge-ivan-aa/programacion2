@@ -5,6 +5,6 @@ import java.util.ArrayList;
 public class App 
 {
     public static void main( String[] args ) {
-      Habitacion micasa = new Habitacion(1, SIMPLE, 80.000)
+      /* Logica interna del hotel */
     }
 }

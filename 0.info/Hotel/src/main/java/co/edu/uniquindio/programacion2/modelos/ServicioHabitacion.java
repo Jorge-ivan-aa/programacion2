@@ -7,6 +7,6 @@ public class ServicioHabitacion extends Servicio {
 
   @Override
   public void Consumible() {
-    System.out.println("Consumiendo desde habitacion");
+    System.out.println("Consumiendo desde habitacion...");
   }
 }

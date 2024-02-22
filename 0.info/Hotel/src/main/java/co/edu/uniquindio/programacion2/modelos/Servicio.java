@@ -6,19 +6,7 @@ public abstract class Servicio implements Consumible {
   
   }
 
-  public void spa() {
-
-  }
-
-  public void restaurante() {
-
-  }
-
-  public void limpieza() {
-  
-  }
-
   public void consumir() {
-  System.out.println("Consumiendo...");
+    System.out.println("Consumiendo...");
   }
 }
