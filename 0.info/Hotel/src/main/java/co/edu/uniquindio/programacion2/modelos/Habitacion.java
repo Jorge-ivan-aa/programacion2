@@ -12,20 +12,20 @@ public class Habitacion {
 
   private int numero;
   private TipoHabitacion tipo;
-  private ArrayList<Servicio> servicios;
+  private ArrayList<Servicio> servicios; 
   private double precio;
 
-  public Habitacion(int numero, TipoHabitacion tipo, ArrayList<Servicio> servicios, double precio) {
+  public Habitacion(int numero, TipoHabitacion tipo, double precio) {
     this.numero = numero;
     this.tipo = TipoHabitacion.SIMPLE;
     this.precio = precio;
-    this.servicios = servicios;
+    this.servicios = new ArrayList<>();
   }
 
   public void setTipo(String input) {
       if (input == "simple") {
         this.tipo = TipoHabitacion.SIMPLE;
-      } else if (input == "double") {
+      } else if (input == "doble") {
         this.tipo = TipoHabitacion.DOBLE;
       } else if (input == "suite") {
         this.tipo = TipoHabitacion.SUITE;

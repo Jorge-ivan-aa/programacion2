@@ -7,10 +7,10 @@ public class Cliente {
   private int dni;
   private ArrayList<Reserva> reservasActivas;
 
-  public Cliente(String nombre, int dni, ArrayList<Reserva> reservasActivas) {
+  public Cliente(String nombre, int dni) {
     this.nombre = nombre;
     this.dni = dni;
-    this.reservasActivas = reservasActivas;
+    this.reservasActivas = new ArrayList<>();
   }
 
   public String getNombre() {
