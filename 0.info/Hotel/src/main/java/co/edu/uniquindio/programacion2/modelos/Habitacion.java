@@ -15,11 +15,23 @@ public class Habitacion {
   private ArrayList<Servicio> servicios; 
   private double precio;
 
-  public Habitacion(int numero, TipoHabitacion tipo, double precio) {
+  public Habitacion(int numero, double precio) {
     this.numero = numero;
     this.tipo = TipoHabitacion.SIMPLE;
     this.precio = precio;
     this.servicios = new ArrayList<>();
+  }
+
+  public int getNumero() {
+      return numero;
+  }
+
+  public void setNumero(int numero) {
+      this.numero = numero;
+  }
+
+  public TipoHabitacion getTipo() {
+      return tipo;
   }
 
   public void setTipo(String input) {
@@ -32,24 +44,23 @@ public class Habitacion {
       }
   }
 
-  public int getNumero() {
-      return numero;
-  }
-
-  public TipoHabitacion getTipo() {
-      return tipo;
-  }
-
   public double getPrecio() {
       return precio;
-  }
-
-  public void setNumero(int numero) {
-      this.numero = numero;
-  }
+}
 
   public void setPrecio(double precio) {
       this.precio = precio;
   }
 
+  public ArrayList<Servicio> getServicios() {
+      return servicios;
+  }
+
+  public void addServicio(Servicio servicio) {
+      this.servicios.add(servicio);
+  }
+
+  /* public void removeServicio(int servicioIndex) { */
+      /* this.servicios.remove(numero); */
+  /* } */
 }

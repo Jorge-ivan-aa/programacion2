@@ -17,10 +17,23 @@ public class Cliente {
     return this.nombre;
   }
 
+  public void setNombre(String nombre) {
+      this.nombre = nombre;
+  }
+
   public int getDni() {
     return this.dni;
   }
+
+  public void setDni(int dni) {
+      this.dni = dni;
+  }
   
-  public ArrayList<Reserva> getReserva() {
+  public ArrayList<Reserva> getReservas() {
     return this.reservasActivas;
   }
+
+  public void addReserva(Reserva reserva) {
+      this.reservasActivas.add(reserva);
+  }
+}

@@ -11,18 +11,40 @@ public class Reserva {
     this.fechaSalida = fechaSalida;
     this.cliente = cliente;
     this.habitacion = habitacion;
+
+    reservaAutomatica();
+  }
+
+  private void reservaAutomatica() {
+    this.cliente.addReserva(this);
+  }
+
+  public Cliente getCliente() {
+      return cliente;
+  }
+
+  public void setCliente(Cliente cliente) {
+      this.cliente = cliente;
+  }
+
+  public Habitacion getHabitacion() {
+      return habitacion;
+  }
+
+  public void setHabitacion(Habitacion habitacion) {
+      this.habitacion = habitacion;
   }
 
   public String getFechaEntrada(){
     return this.fechaEntrada;
   }
 
-  public String getFechaSalida(){
-    return this.fechaSalida;
-  }
-
   public void setFechaEntrada(String fecha){
     this.fechaEntrada = fecha;
+  }
+
+  public String getFechaSalida(){
+    return this.fechaSalida;
   }
 
   public void setFechaSalida(String fecha){

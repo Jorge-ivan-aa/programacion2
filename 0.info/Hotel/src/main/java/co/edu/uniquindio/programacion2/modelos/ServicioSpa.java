@@ -1,8 +1,8 @@
 package co.edu.uniquindio.programacion2.modelos;
 
 public class ServicioSpa extends Servicio {
-  public ServicioSpa() {
-
+  public ServicioSpa(String nombre) {
+    super(nombre);
   }
 
   @Override
