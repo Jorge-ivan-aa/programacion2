@@ -71,7 +71,14 @@ public class App {
     }
 
     public static void calcularDeudaCliente(Cliente cliente) {
-
+        ArrayList<Reserva> reservas = cliente.getReservas();
+        int deuda = 0;
+        for (int j=0; j < reservas.size(); j++){
+          Reserva reserva = reservas.get(j);
+          Habitacion habitacion = reserva.getHabitacion();
+          deuda = deuda + habitacion.getPrecio();
+        }
+        System.out.println("La deuda total del cliente "+ cliente.getNombre() + " es: " + deuda);
     }
     
     public static void listarFechaReservasCliente(Cliente cliente) { 

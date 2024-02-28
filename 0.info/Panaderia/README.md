@@ -6,12 +6,11 @@
 
 ### Principio de Responsabilidad Única (SRP):
 
-
 #### Cumplimiento:
 > Las clases como ProductoBebida y ProductoPan tienen la responsabilidad de definir características específicas y únicas de cada tipo de producto. La clase Venta tiene la responsabilidad de gestionar las ventas de productos sin preocuparse por los detalles internos de cada tipo de producto.
 
 #### Incumplimiento:
->Si una clase como Producto tuviera responsabilidades adicionales que no están directamente relacionadas con la representación de un producto (por ejemplo, cálculos de impuestos), estaría violando el SRP.
+> Si una clase como Producto tuviera responsabilidades adicionales que no están directamente relacionadas con la representación de un producto (por ejemplo, cálculos de impuestos), estaría violando el SRP.
 
 
 ### Principio de Abierto/Cerrado (OCP):
@@ -41,11 +40,10 @@
 > Si una interfaz como ProductoEspecificaciones contiene métodos que no son utilizados por todas las clases que la implementan, estaría violando el ISP.
 
 
-
 ### Principio de Inversión de Dependencias (DIP):
 
 #### Cumplimiento:
 > La clase Venta depende de abstracciones como Producto y Horneable en lugar de clases concretas, lo que facilita la introducción de nuevos tipos de productos sin modificar el código existente.
 
 #### Incumplimiento:
->Si la clase Venta depende directamente de las implementaciones concretas de productos, como ProductoBebida o ProductoPan, estaría violando el DIP
+> Si la clase Venta depende directamente de las implementaciones concretas de productos, como ProductoBebida o ProductoPan, estaría violando el DIP

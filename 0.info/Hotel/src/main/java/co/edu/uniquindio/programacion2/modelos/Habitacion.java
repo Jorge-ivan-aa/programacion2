@@ -13,9 +13,9 @@ public class Habitacion {
   private int numero;
   private TipoHabitacion tipo;
   private ArrayList<Servicio> servicios; 
-  private double precio;
+  private int precio;
 
-  public Habitacion(int numero, double precio) {
+  public Habitacion(int numero, int precio) {
     this.numero = numero;
     this.tipo = TipoHabitacion.SIMPLE;
     this.precio = precio;
@@ -44,11 +44,11 @@ public class Habitacion {
       }
   }
 
-  public double getPrecio() {
-      return precio;
-}
+  public int getPrecio() {
+    return precio;
+  }
 
-  public void setPrecio(double precio) {
+  public void setPrecio(int precio) {
       this.precio = precio;
   }
 
