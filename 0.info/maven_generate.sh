@@ -12,12 +12,13 @@ if [ "$option" == 1 ];then
   mvn archetype:generate -DgroupId=co.edu.uniquindio.programacion2 -DartifactId="$proyect_name" -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
   is_generate=true
 elif [ "$option" == 2 ];then
-  mvn archetype:generate -DgroupId=co.edu.uniquindio.programacion2 -DartifactId="$proyect_name" -DarchetypeArtifactId=javafx-archetype-fxml -DarchetypeVersion=0.0.6 -DinteractiveMode=false
+  mvn archetype:generate -DgroupId=co.edu.uniquindio.programacion2 -DartifactId="$proyect_name" -DarchetypeGroupId=org.openjfx -DarchetypeArtifactId=javafx-archetype-simple -DarchetypeVersion=0.0.3 -Djavafx-version=21.0.2 -DinteractiveMode=false 
   is_generate=true
-  
+  cd "$proyect_name" || exit
+  rm nbactions.xml nb-configuration.xml 
 else
   echo "No se especificó un tipo de proyecto existente"
-  is_generate=fas
+  is_generate=false
 fi
 
 if [ "$is_generate" == true ];then
