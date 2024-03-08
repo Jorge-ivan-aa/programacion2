@@ -5,8 +5,17 @@ public class Suscripcion {
   private Cliente basic;
   private Cliente premium;
   private Cliente vip;
+  private static Suscripcion instance;
 
-    public Suscripcion() {
+    private Suscripcion() {
+
+    }
+
+    public static Suscripcion getInstance() {
+      if(instance == null) {
+        instance = new Suscripcion();
+      }
+      return instance;
     }
 
     public Cliente clienteBasic(String nombre, String apellido, int edad, String cedula) {

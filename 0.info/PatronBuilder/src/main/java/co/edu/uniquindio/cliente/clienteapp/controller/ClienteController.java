@@ -68,7 +68,7 @@ public class ClienteController {
 
    private void agregarCliente() {
       
-      Suscripcion tiposCliente = new Suscripcion();
+      Suscripcion tiposCliente = Suscripcion.getInstance();
 
       String nombre = txtNombre.getText();
       String edad = txtEdad.getText();
