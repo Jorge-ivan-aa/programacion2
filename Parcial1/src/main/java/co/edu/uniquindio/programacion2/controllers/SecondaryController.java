@@ -1,5 +1,6 @@
-package co.edu.uniquindio.programacion2;
+package co.edu.uniquindio.programacion2.controllers;
 
+import co.edu.uniquindio.programacion2.App;
 import java.io.IOException;
 import javafx.fxml.FXML;
 
