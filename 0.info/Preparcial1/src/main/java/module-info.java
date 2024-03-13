@@ -5,4 +5,7 @@ module co.edu.uniquindio.programacion2 {
 
     opens co.edu.uniquindio.programacion2.controllers to javafx.fxml;
     exports co.edu.uniquindio.programacion2;
+
+    opens co.edu.uniquindio.programacion2.models;
+    exports co.edu.uniquindio.programacion2.models;
 }

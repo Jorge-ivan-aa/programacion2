@@ -1,12 +1,10 @@
 package co.edu.uniquindio.programacion2.models;
 
-import co.edu.uniquindio.programacion2.services.IVehiculoAgua;
-import co.edu.uniquindio.programacion2.services.IVehiculoElectrico;
-
 public class VehiculoPasajero extends Vehiculo implements IVehiculoElectrico, IVehiculoAgua {
     private int numeroMaximoPasajeros;
 
     public VehiculoPasajero() {
+
     }
 
     public VehiculoPasajero(String placa, String modelo, String marca, String color, int numeroMaximoPasajeros) {

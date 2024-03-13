@@ -1,4 +1,4 @@
-package co.edu.uniquindio.programacion2;
+package co.edu.uniquindio.Parcial1;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -22,7 +22,7 @@ public class App extends Application {
         stage.show();
     }
 
-    public static void setRoot(String fxml) throws IOException {
+    static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
 
