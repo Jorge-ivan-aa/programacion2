@@ -9,9 +9,7 @@ echo -e "1. Proyecto simple\n2. Proyecto javafx"
 read -r option
 
 if [ "$option" == 1 ];then
-  mvn archetype:generate -DgroupId=co.edu.uniquindio."$proyect_name" -DartifactId="$proyect_name" -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
-  cd "$proyect_name"/src/main/java/co/edu/uniquindio/"$proyect_name" || exit
-  mkdir models controllers
+  mvn archetype:generate -DgroupId=co.edu.uniquindio."${proyect_name,,}" -DartifactId="$proyect_name" -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
   is_generate=true
 elif [ "$option" == 2 ];then
   mvn archetype:generate -DgroupId=co.edu.uniquindio."$proyect_name" -DartifactId="$proyect_name" -DarchetypeGroupId=org.openjfx -DarchetypeArtifactId=javafx-archetype-fxml -DarchetypeVersion=0.0.3 -Djavafx-version=21.0.2 -DinteractiveMode=false 
@@ -26,6 +24,3 @@ if [ "$is_generate" == true ];then
   git add --all
   git commit -m "Se generó el proyecto $proyect_name"
 fi
-
-function generate() {
-}
