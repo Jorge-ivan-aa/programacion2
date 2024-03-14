@@ -2,6 +2,7 @@ package co.edu.uniquindio.parcial1.models.build;
 
 import java.util.ArrayList;
 import co.edu.uniquindio.parcial1.models.Vehiculo;
+import co.edu.uniquindio.parcial1.models.Propietario;
 
 public class PropietarioBuilder { 
     public String nombre;
@@ -34,8 +35,8 @@ public class PropietarioBuilder {
       listaVehiculos.add(vehiculo);
     }
 
-    public PropietarioBuilder build() {
-      return this; 
+    public Propietario build() {
+      return new Propietario(this); 
     }
 
 }

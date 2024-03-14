@@ -48,6 +48,10 @@ public abstract class Vehiculo {
         this.color = color;
     }
 
+    public void encender(){
+        System.out.println("Encendiendo mi vehiculo");
+    }
+
     @Override
     public String toString() {
         return "Vehiculo{" +

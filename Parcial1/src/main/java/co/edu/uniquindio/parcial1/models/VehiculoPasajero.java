@@ -2,11 +2,11 @@ package co.edu.uniquindio.parcial1.models;
 
 import java.util.ArrayList;
 
-public class VehiculoTransporte extends Vehiculo { 
+public class VehiculoPasajero extends Vehiculo { 
     private int numeroMaximoPasajeros;
     private ArrayList<Usuario> listaPasajeros;
 
-    public VehiculoTransporte(String placa, String modelo, String marca, String color, Propietario propietario, int numeroMaximoPasajeros) { 
+    public VehiculoPasajero(String placa, String modelo, String marca, String color, Propietario propietario, int numeroMaximoPasajeros) { 
         super(placa, modelo, marca, color, propietario);
         this.numeroMaximoPasajeros = numeroMaximoPasajeros;
         this.listaPasajeros = new ArrayList<>();
