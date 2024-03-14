@@ -1,23 +1,22 @@
-package co.edu.uniquindio.programacion2.models;
+package co.edu.uniquindio.parcial1.models;
 
 public abstract class Vehiculo {
     private String placa;
     private String modelo;
     private String marca;
     private String color;
+    private Propietario propietario;
 
-    public Vehiculo() {
-    }
-
-    public Vehiculo(String placa, String modelo, String marca, String color) {
+    public Vehiculo(String placa, String modelo, String marca, String color, Propietario propietario) {
         this.placa = placa;
         this.modelo = modelo;
         this.marca = marca;
         this.color = color;
+        this.propietario = propietario;
     }
 
     public String getPlaca() {
-        return placa;
+        return this.placa;
     }
 
     public void setPlaca(String placa) {
@@ -25,7 +24,7 @@ public abstract class Vehiculo {
     }
 
     public String getModelo() {
-        return modelo;
+        return this.modelo;
     }
 
     public void setModelo(String modelo) {
@@ -33,7 +32,7 @@ public abstract class Vehiculo {
     }
 
     public String getMarca() {
-        return marca;
+        return this.marca;
     }
 
     public void setMarca(String marca) {
@@ -41,11 +40,19 @@ public abstract class Vehiculo {
     }
 
     public String getColor() {
-        return color;
+        return this.color;
     }
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public Propietario getPropietario() {
+        return propietario;
+    }
+
+    public void setPropietario(Propietario propietario) {
+        this.propietario = propietario;
     }
 
     @Override
@@ -58,3 +65,4 @@ public abstract class Vehiculo {
                 '}';
     }
 }
+
